@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+* {
+    font-family: 'Ubuntu';
+}
+
+#profile_pic {
+    width: 200px;
+    margin: 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20% ;
+    background-color: #ff600a;
+    height: 5vh;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_links, a {
+    color: white;
+    padding-top: 5px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.nav_links, a:hover {
+    color: #34B3F1;
+    padding-top: 5px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: #34B3F1;
+    color: white;
+    padding: 5px;
+    width: 200px;
+}
+
+button:hover {
+    border: none;
+    background-color: #ff600a;
+    color: black;
+    padding: 5px;
+    width: 200px;
+}
+
+.portfolio_img {
+    width: 250px;
+}
+
+.portfolio {
+    padding-left: 20%;
+    padding-right: 20% ;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.portfolio_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio_item {
+    padding: 1.5%;
+}
+
+.light_font {
+    font: lighter;
+    color: grey;
+    font-size: smaller;
+}
+
+.main_header {
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20% ;
+    padding-top: 2%;
+}
+
+.header_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.biography {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20% ;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #34B3F1;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    font-weight: lighter;
+    padding: 2%;
+}
