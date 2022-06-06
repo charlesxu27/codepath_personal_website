@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
+* {
+    font-family: 'Ubuntu';
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     color: black;
     font-size: 50px;
@@ -7,26 +19,19 @@ h1 {
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 32px;
     font-weight: bold;
-}
-
-* {
-    font-family: 'Ubuntu';
-}
-
-#profile_pic {
-    width: 200px;
-    margin: 10%;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     padding-left: 20%;
-    padding-right: 20% ;
+    padding-right: 20%;
     background-color: #ff600a;
     height: 5vh;
+    padding-top: 1%;
+    margin-bottom: 1%;
 }
 
 .nav_links {
@@ -34,18 +39,37 @@ nav {
     justify-content: space-evenly;
 }
 
-.nav_links, a {
+.nav_links a {
     color: white;
     padding-top: 5px;
     padding-left: 30px;
     text-decoration: none;
 }
 
-.nav_links, a:hover {
+.nav_links a:hover {
     color: #34B3F1;
     padding-top: 5px;
     padding-left: 30px;
     text-decoration: none;
+}
+
+.main_header {
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.header_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.header_right,
+img {
+    width: 250px;
+    margin: 2.5%;
 }
 
 button {
@@ -64,15 +88,37 @@ button:hover {
     width: 200px;
 }
 
-.portfolio_img {
-    width: 250px;
+.biography {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    background-color: #34B3F1;
+    color: white;
+}
+
+.biography h2 {
+    color: black
 }
 
 .portfolio {
     padding-left: 20%;
-    padding-right: 20% ;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-right: 20%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.portfolio_link {
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio_link:hover {
+    text-decoration: none;
+    color: #34B3F1;
 }
 
 .portfolio_grid {
@@ -82,7 +128,20 @@ button:hover {
 }
 
 .portfolio_item {
-    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.portfolio_img {
+    display: block;
+    max-width: 225px;
+    max-height: 350px;
+    width: 100%;
+    height: auto;
 }
 
 .light_font {
@@ -91,34 +150,15 @@ button:hover {
     font-size: smaller;
 }
 
-.main_header {
-    display: flex;
-    justify-content: center;
-    padding-left: 20%;
-    padding-right: 20% ;
-    padding-top: 2%;
-}
-
-.header_left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.biography {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 20%;
-    padding-right: 20% ;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    background-color: #34B3F1;
-    color: white;
-}
-
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     font-weight: lighter;
-    padding: 2%;
+    height: 5vh;
+    background-color: #ff6d00;
+    margin-top: 1%;
+    padding-top: .5%;
+    padding-bottom: .5%;
 }
